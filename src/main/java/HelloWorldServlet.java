@@ -10,17 +10,23 @@ import java.io.*;
 public class HelloWorldServlet extends HttpServlet {
 
     int hitCounter;
-    public void init(){
-        hitCounter = 0;
-    }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String title = "Hello, World";
+        String views = "Times viewed ";
+        String name = request.getParameter("name");
         response.setContentType("text/html");
         hitCounter++;
         PrintWriter out = response.getWriter();
-        String title = "Times viewed ";
-        out.println("<h1>"+ title + "</h1>" + "<h2>" + hitCounter + "</h2>");
+
+        out.println("<h1>"+ views + "</h1>" + "<h2>" + hitCounter + "</h2>");
+        if(name == null){
+            out.println("Hello, World");
+
+        }else {
+            out.println("<h1> Hello, " + name + "World!");
+        }
 
 
     }
