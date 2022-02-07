@@ -15,6 +15,6 @@
 <h1>HA! Your info has been replace with the POKEMON LEGENDS ARCEUS STORY!</h1>
 
 
-<img src="![](../../Pokemon-Legends-Arceus.png)" alt="pokemon">
+
 </body>
 </html>

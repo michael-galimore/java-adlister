@@ -14,15 +14,6 @@
 <h1>Welcome!</h1>
 
 
-<form method="POST" action="/login.jsp">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username" placeholder="Username"><br>
-    <label for="password">Password:</label><br>
-    <input type="text" id="password" name="password" placeholder="password"><br><br>
-    <input type="submit" value="Submit">
-</form>
-
-
 <%
     if(request.getMethod().equalsIgnoreCase("post")) {
 
@@ -35,6 +26,18 @@
         }
     }
 %>
+
+<form method="POST" action="/login.jsp">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" placeholder="Username"><br>
+    <label for="password">Password:</label><br>
+    <input type="text" id="password" name="password" placeholder="password"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
