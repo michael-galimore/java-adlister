@@ -12,5 +12,11 @@
         <h1>Viewing your profile.</h1>
     </div>
 
+<div>
+    <form action="/profile" method="post">
+    <button type="submit">Logout</button>
+    </form>
+</div>
+
 </body>
 </html>
